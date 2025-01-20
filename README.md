@@ -47,8 +47,6 @@ CREATE TABLE employees (
     branch_id VARCHAR(10)
 );
 
-
-
 -- Create table "Members"
 DROP TABLE IF EXISTS members;
 CREATE TABLE members (
@@ -57,7 +55,6 @@ CREATE TABLE members (
     member_address VARCHAR(20),
     reg_date DATE
 );
-
 
 -- Create table "Books"
 DROP TABLE IF EXISTS books;
@@ -71,7 +68,6 @@ CREATE TABLE books (
     publisher VARCHAR(30)
 );
 
-
 -- Create table "IssueStatus"
 DROP TABLE IF EXISTS issued_status;
 CREATE TABLE issued_status (
@@ -83,9 +79,6 @@ CREATE TABLE issued_status (
     issued_emp_id VARCHAR(10)
 );
 
-
-
-
 -- Create table "ReturnStatus"
 DROP TABLE IF EXISTS return_status;
 CREATE TABLE return_status (
@@ -95,6 +88,7 @@ CREATE TABLE return_status (
     return_date DATE,
     return_book_isbn VARCHAR(25)
 );
+
 -- Foreign key 
 ALTER TABLE issued_status
 ADD CONSTRAINT fk_members
